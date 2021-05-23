@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    lalala
+</header>
+
+
+    <div id="clock">
+        <div id="innerClock">
+               <div>
+                    <audio id="alarmSound" src="music/alarm.mp3"></audio>
+               </div> 
+    
+            <div id="alarm">
+                <div>
+                    <div onclick="setAlarm('view')">
+                        Alarm:    <span id="alarmHour">6</span>:<span id="alarmMinute">22</span>
+                        <span>AM</span>
+                    </div>
+                    
+                    <div id="getAlarm">
+                        <header><span onclick="setAlarm('close')">x</span></header>
+                        <div>
+                            hour
+                            <input type="number" id="aHour" max="23" min="0">
+                        </div>
+                        <div>
+                            minute
+                            <input type="number" id="aMinute" max="59" min="0">
+                        </div>
+
+                        <button onclick="setAlarm('ok')">ok</button>
+                        <button onclick="setAlarm('cancel')">cancel</button>
+                    </div>
+
+                </div>
+                <span id="typeClock">AM/PM</span>
+            </div>
+           
+           
+           
+           
+           
+            <div id="digital">
+                <p id="hour">0</p>
+                <p id="dot">:</p>
+                <p id="min">00</p>
+                <p id="sec">00</p>
+            </div>
+           
+            <div id="getDate">
+                <div>
+                    <span id="month">SEPTEMBER</span>
+                    <span id="date">19</span>
+                    <span id="year">1994</span>
+                </div>
+                <span id="day">MONDAY</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

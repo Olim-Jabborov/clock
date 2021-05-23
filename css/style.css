@@ -1,0 +1,191 @@
+@font-face {
+    src: url('../fonts/digital-7.ttf');
+    font-family: 'digital-7';
+}
+
+* {
+    font-family: 'digital-7';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(182, 86, 126);
+}
+
+#clock {
+    cursor: default;
+    -webkit-user-select: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 450px;
+    margin: 100px auto;
+    background: black;
+    border-radius: 30px;
+    box-shadow: 0 0 50px black;
+}
+
+#innerClock {
+    overflow: hidden;
+    width: 80%;
+}
+
+#alarm, #getDate {
+    width: 100%;
+    font-size: 27px;
+    color: rgb(43, 71, 55);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+#alarm {
+    position: relative;
+}
+
+#digital {
+    color: rgb(80, 182, 124);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+
+#hour, #dot, #min {
+    font-size: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: .72;
+    width: 210px;
+    overflow: hidden;
+}
+
+#min {
+    align-items: flex-start;
+}
+
+#hour {
+    align-items: flex-end;
+}
+
+#dot {
+    width: 70px;
+    align-items: center;
+}
+
+
+#sec {
+    font-size: 50px;
+    padding: 0;
+    letter-spacing: 0;
+    width: 50px;
+}
+
+#alarm #typeClock {
+    color: rgb(22, 31, 26);
+}
+
+
+#setAlarm {
+    color: rgb(22, 31, 26);
+}
+
+#alarm #typeClock:hover {
+    color: rgb(43, 71, 55);
+}
+
+#getAlarm {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 20px black;
+    top: 0;
+    left: 0;
+    background: rgb(95, 92, 92);
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: rgb(182, 177, 177);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#alarmAMPM {
+    display: none;
+}
+
+#getAlarm div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#getAlarm header {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+#getAlarm header span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    background: rgb(187, 50, 50);
+    color: white;
+    font-size: 15px;
+}
+
+#getAlarm button {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    background: #50B67C;
+    width: 40%;
+    outline: 0;
+}
+#getAlarm button:hover {
+    background: rgb(105, 216, 153);
+}
+
+#getAlarm button:last-of-type {
+    background: rgb(182, 80, 85);
+}
+#getAlarm button:last-of-type:hover {
+    background: rgb(230, 126, 131);
+}
+
+
+
+#getAlarm input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    background: rgba(0,0,0,.4);
+    font-size: 24px;
+    color: white;
+    width: 80px;
+}
